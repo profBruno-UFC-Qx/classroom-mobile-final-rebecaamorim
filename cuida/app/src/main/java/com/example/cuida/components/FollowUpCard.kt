@@ -24,15 +24,14 @@ fun FollowUpCard() {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 24.dp)
-            .height(140.dp),
+            .padding(horizontal = 18.dp)
+            .height(130.dp),
         shape = RoundedCornerShape(22.dp),
         colors = CardDefaults.cardColors(
             containerColor = Color(0xFFF72585)
         ),
         elevation = CardDefaults.cardElevation(8.dp)
     ) {
-
         Row(
             modifier = Modifier
                 .fillMaxSize()
@@ -42,17 +41,16 @@ fun FollowUpCard() {
 
             Box(
                 modifier = Modifier
-                    .size(70.dp)
+                    .size(60.dp)
                     .clip(RoundedCornerShape(20.dp))
                     .background(Color(0xFFFF5DB1)),
                 contentAlignment = Alignment.Center
             ) {
-
                 Icon(
                     imageVector = Icons.Default.FavoriteBorder,
                     contentDescription = null,
                     tint = Color.White,
-                    modifier = Modifier.size(36.dp)
+                    modifier = Modifier.size(24.dp)
                 )
             }
 
@@ -65,34 +63,16 @@ fun FollowUpCard() {
                 Text(
                     text = "Meu Acompanhamento",
                     color = Color.White,
-                    fontSize = 22.sp,
+                    fontSize = 16.sp,
                     fontWeight = FontWeight.Bold
                 )
 
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(2.dp))
 
                 Text(
                     text = "Consultas, exames e histórico médico",
                     color = Color.White,
-                    fontSize = 15.sp
-                )
-            }
-
-            Box(
-                modifier = Modifier
-                    .clip(RoundedCornerShape(50))
-                    .background(Color(0xFFFF5DB1))
-                    .padding(
-                        horizontal = 16.dp,
-                        vertical = 8.dp
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-
-                Text(
-                    text = "Novo",
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
+                    fontSize = 12.sp
                 )
             }
         }

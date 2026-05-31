@@ -1,4 +1,4 @@
-package com.example.cuida.components
+package com.example.cuida.components.utils
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -20,7 +20,7 @@ fun CircleIcon(
 ) {
     Box(
         modifier = Modifier
-            .size(52.dp)
+            .size(44.dp)
             .clip(CircleShape)
             .background(background),
         contentAlignment = Alignment.Center
@@ -28,7 +28,8 @@ fun CircleIcon(
         Icon(
             imageVector = icon,
             contentDescription = null,
-            tint = Color.White
+            tint = Color.White,
+            modifier = Modifier.size(18.dp)
         )
     }
 }
