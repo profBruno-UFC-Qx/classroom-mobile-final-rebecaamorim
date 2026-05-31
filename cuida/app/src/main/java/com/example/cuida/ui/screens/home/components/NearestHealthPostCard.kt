@@ -1,4 +1,4 @@
-package com.example.cuida.components
+package com.example.cuida.ui.screens.home.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape

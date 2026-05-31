@@ -1,4 +1,4 @@
-package com.example.cuida.screens
+package com.example.cuida.ui.screens.vaccines
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -18,7 +18,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.cuida.model.Vaccine
+import com.example.cuida.ui.screens.vaccines.Vaccine
 
 @Composable
 fun VaccinesScreen(onBackClick: () -> Unit = {}) {

@@ -1,4 +1,4 @@
-package com.example.cuida.model
+package com.example.cuida.ui.screens.home.components
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector

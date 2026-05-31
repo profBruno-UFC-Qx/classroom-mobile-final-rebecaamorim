@@ -1,4 +1,4 @@
-package com.example.cuida.model
+package com.example.cuida.ui.screens.vaccines
 
 data class Vaccine(
     val name: String,

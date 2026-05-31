@@ -1,4 +1,4 @@
-package com.example.cuida.components.utils
+package com.example.cuida.ui.screens.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.cuida.model.ServiceItem
+import com.example.cuida.ui.screens.home.components.ServiceItem
 
 @Composable
 fun ServiceCard(service: ServiceItem) {

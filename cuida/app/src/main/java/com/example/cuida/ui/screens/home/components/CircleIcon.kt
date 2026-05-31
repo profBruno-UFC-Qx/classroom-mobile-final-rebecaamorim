@@ -1,4 +1,4 @@
-package com.example.cuida.components.utils
+package com.example.cuida.ui.screens.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

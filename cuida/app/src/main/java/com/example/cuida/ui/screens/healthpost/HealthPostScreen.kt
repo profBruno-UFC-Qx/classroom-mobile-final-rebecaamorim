@@ -1,4 +1,4 @@
-package com.example.cuida.screens
+package com.example.cuida.ui.screens.healthpost
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -7,7 +7,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.cuida.model.HealthPost
+import com.example.cuida.ui.screens.healthpost.HealthPost
 
 @Composable
 fun HealthPostsScreen() {

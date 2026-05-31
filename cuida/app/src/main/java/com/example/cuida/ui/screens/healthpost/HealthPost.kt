@@ -1,4 +1,4 @@
-package com.example.cuida.model
+package com.example.cuida.ui.screens.healthpost
 
 data class HealthPost(
     val name: String,
