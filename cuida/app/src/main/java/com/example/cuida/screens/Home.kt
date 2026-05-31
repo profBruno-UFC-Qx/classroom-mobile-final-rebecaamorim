@@ -14,7 +14,7 @@ import com.example.cuida.components.NearestHealthPostCard
 import com.example.cuida.components.utils.ServicesGrid
 
 @Composable
-fun HomeScreen() {
+fun Home() {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
