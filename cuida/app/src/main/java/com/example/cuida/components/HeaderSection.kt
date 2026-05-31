@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Text
@@ -16,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.cuida.components.utils.CircleIcon
 
 @Composable
 fun HeaderSection() {
@@ -31,6 +31,7 @@ fun HeaderSection() {
                 )
             )
             .background(Color(0xFF1F55F0))
+            .statusBarsPadding()
             .padding(24.dp)
     ) {
 
@@ -39,28 +40,19 @@ fun HeaderSection() {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-
-                CircleIcon(
-                    icon = Icons.Default.Favorite,
-                    background = Color(0xFF3F73F4)
-                )
-
-                Spacer(modifier = Modifier.width(16.dp))
-
                 Column(
                     modifier = Modifier.weight(1f)
                 ) {
-
                     Text(
-                        text = "Saúde Digital",
+                        text = "Cuida+",
                         color = Color.White,
-                        fontSize = 28.sp,
+                        fontSize = 26.sp,
                         fontWeight = FontWeight.Bold
                     )
-
                     Text(
-                        text = "Olá, bem-vindo!",
-                        color = Color.White
+                        text = "Bem-vindo!",
+                        color = Color.White,
+                        fontSize = 12.sp
                     )
                 }
 
@@ -68,9 +60,7 @@ fun HeaderSection() {
                     icon = Icons.Default.Notifications,
                     background = Color(0xFF3F73F4)
                 )
-
                 Spacer(modifier = Modifier.width(12.dp))
-
                 CircleIcon(
                     icon = Icons.Default.Settings,
                     background = Color(0xFF3F73F4)
@@ -80,9 +70,9 @@ fun HeaderSection() {
             Spacer(modifier = Modifier.height(24.dp))
 
             Text(
-                text = "Acesso fácil aos serviços de saúde da sua cidade",
+                text = "Acesse aqui os serviços de saúde da sua cidade",
                 color = Color.White,
-                fontSize = 16.sp
+                fontSize = 14.sp
             )
         }
     }
